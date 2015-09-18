@@ -47,8 +47,10 @@
 	/* eslint new-cap:0 no-unused-vars:0 */
 	"use strict";
 	
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+	
 	var React = __webpack_require__(1);
-	var Playground = __webpack_require__(157);
+	var OriginalPlayground = __webpack_require__(157);
 	
 	__webpack_require__(350);
 	__webpack_require__(354);
@@ -62,6 +64,10 @@
 	
 	var es6Example = __webpack_require__(362);
 	var ResponsiveIframe = __webpack_require__(363);
+	
+	var Playground = function Playground(props) {
+	  return React.createElement(OriginalPlayground, _extends({}, props, { previewComponent: ResponsiveIframe }));
+	};
 	
 	var Index = React.createClass({
 	  displayName: "Index",
