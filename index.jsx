@@ -17,7 +17,7 @@ var contextExample = require("raw!./examples/context.example");
 var es6Example = require("raw!./examples/es6.example");
 var ResponsiveIframe = require("component-playground-responsive-iframe");
 
-var Playground = (props) => <OriginalPlayground {...props} previewComponent={ResponsiveIframe} />:
+var Playground = (props) => return <OriginalPlayground {...props} previewComponent={ResponsiveIframe} />;
 
 var Index = React.createClass({
   render() {
