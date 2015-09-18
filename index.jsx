@@ -15,6 +15,7 @@ var DebugInfo = require("./components/debug-info");
 var contextExample = require("raw!./examples/context.example");
 
 var es6Example = require("raw!./examples/es6.example");
+var ResponsiveIframe = require("component-playground-responsive-iframe");
 
 var Index = React.createClass({
   render() {
